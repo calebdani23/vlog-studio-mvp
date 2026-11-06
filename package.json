@@ -1,0 +1,1 @@
+{"name":"vlog-studio-mvp","version":"0.1.0","private":true,"type":"module","description":"Demo interactiva de producción de vlogs diarios por Adren Labs","scripts":{"check":"node --check app.js && node --check data.js && node --check media.js","test":"node --test tests/domain.test.js"}}

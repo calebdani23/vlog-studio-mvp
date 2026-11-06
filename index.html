@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Vlog Studio, una demo interactiva de Adren Labs para dar forma a tus clips, encontrar tu historia y publicar una serie día a día.">
+  <title>Vlog Studio — Un día, una historia</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./polish.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Ir al contenido</a>
+  <div id="app"><div style="min-height:100vh;display:grid;place-content:center;background:#f8f7f3;font:16px system-ui;color:#20221f">Preparando tu estudio…</div></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-stack" role="status" aria-live="polite"></div>
+  <input type="file" id="clip-upload" accept="video/*" multiple hidden>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
