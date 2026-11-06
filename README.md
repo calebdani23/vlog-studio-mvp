@@ -5,14 +5,16 @@ Demo interactiva de Adren Labs para organizar una serie de vlogs, preparar su hi
 La aplicación funciona como un sitio estático, sin compilación ni backend. Combina edición y almacenamiento locales con ejemplos de hooks y recomendaciones redactados como plantillas.
 
 - Repositorio: [calebdani23/vlog-studio-mvp](https://github.com/calebdani23/vlog-studio-mvp).
-- GitHub Pages: publicación y URL pública pendientes de confirmación. Las instrucciones de despliegue están más abajo.
+- Demo pública: [Abrir Vlog Studio](https://calebdani23.github.io/vlog-studio-mvp/).
 - Matriz funcional: [39 requisitos y cobertura de la demo](docs/FEATURES.md).
+
+![Vista del MVP publicado](docs/preview.png)
 
 ## Qué se puede probar
 
 - Navegar entre el resumen del día, los episodios, el calendario, las ideas y la configuración.
 - Editar datos, notas y estados de trabajo y conservarlos en el mismo navegador.
-- Organizar el calendario y configurar recordatorios locales.
+- Organizar el calendario y guardar preferencias de recordatorios de demostración.
 - Importar videos propios, reproducirlos y conservar sus archivos en IndexedDB.
 - Seleccionar fragmentos, cambiar sus puntos de inicio y fin y ordenar el montaje.
 - Revisar hooks de ejemplo y adaptar su texto.
@@ -147,7 +149,7 @@ Configuración prevista para este repositorio:
 
 Las rutas con `#` conservan la navegación dentro del documento estático y los recursos usan rutas relativas. La aplicación no requiere variables de entorno ni secretos para esta modalidad.
 
-Este README no confirma por sí mismo que Pages esté publicado. La URL y el estado deben comprobarse después del despliegue.
+Despliegue inicial verificado el 6 de noviembre de 2026: [ejecución de GitHub Pages completada](https://github.com/calebdani23/vlog-studio-mvp/actions/runs/42208673885). Se abrió la URL pública y se recorrió el estudio. Las futuras actualizaciones de `main` se publican mediante esta misma configuración.
 
 ## Estructura
 
@@ -170,3 +172,13 @@ npm test
 ```
 
 Estas comprobaciones de código no sustituyen la revisión en navegador de importación, reproducción, persistencia y exportación. La [matriz funcional](docs/FEATURES.md) incluye un recorrido manual para evaluar esas operaciones.
+
+## Validación de esta entrega
+
+- Cuatro pruebas de dominio aprobadas con `npm test`: publicación tardía, contadores y progreso, metas y cierre, y archivos de muestra.
+- Comprobación de sintaxis de los módulos JavaScript.
+- Recorrido en navegador de selección de clips, edición y persistencia del hook, recorte, orden, deshacer, registro manual y calendario.
+- Exportación de video desde el sitio publicado: archivo WebM real con video VP9 a 540 × 960 y pista Opus. El material de ejemplo es silencioso.
+- La importación de archivos, los formatos móviles y otros navegadores requieren una revisión adicional en dispositivos reales antes de usar el producto en producción.
+
+La frecuencia efectiva de fotogramas y la estabilidad de la exportación dependen del navegador y de mantener la pestaña activa. Esta entrega es un MVP demostrable, no una app de producción.
